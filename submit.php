@@ -2,12 +2,12 @@
  if(isset($_POST['submit'])){
      $name=$_POST['name'];
      $email=$_POST['email'];
-     $phone=$_POST['phone'];
+     $sub=$_POST['subject'];
      $msg=$_POST['msg'];
 
      $to='bsrnasir@yahoo.com';
      $subject='form submission';
-     $message="name: ".$name."\n"."Phone: ".$phone."\n". "wrote the following: "."\n\n".$msg;
+     $message="name: ".$name."\n"."subject: ".$sub."\n". "wrote the following: "."\n\n".$msg;
      $headers="from: ".$email;
 
      if(mail($to,$subject,$message,$headers)){
