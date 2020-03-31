@@ -1,0 +1,861 @@
+$color-blue-regular: #344473;
+$color-blue-clicked: #008afc;
+$color-blue-hover: #000;
+$bg-color: #ffffff;
+$raleway: "Raleway",
+sans-serif;
+$moserito: "Montserrat",
+sans-serif;
+$default-width: 100%;
+$default-width-small: 31rem;
+$lato: "Sen",
+sans-serif;
+$montserrat: "Montserrat",
+sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
+    background: $color-blue-regular;
+}
+
+.band {
+    z-index: 5000;
+    width: $default-width;
+    background-color: whitesmoke;
+    height: 3rem;
+    border-bottom: 2px solid $color-blue-regular;
+    position: fixed;
+    &-par {
+        align-self: center;
+        padding: 10px;
+    }
+}
+
+.nav {
+    & {
+        margin-top: 3rem;
+        z-index: 5000;
+        display: flex;
+        background-color: $bg-color;
+        height: 4rem;
+        width: $default-width;
+        position: fixed;
+        box-shadow: 2px 1px 6px 0.5px #a19e9e;
+        padding: 5px;
+    }
+    &-body {
+        padding-top: 1rem;
+    }
+    &-image {
+        margin-left: 5rem;
+        padding-top: 5px;
+    }
+    &-items {
+        display: flex;
+        margin-left: 40rem;
+    }
+    &-item {
+        padding-top: 1rem;
+        padding-left: 15px;
+        list-style-type: none;
+        font-size: 14px;
+        font-weight: 660;
+        color: $color-blue-regular;
+    }
+    &-lin:hover {
+        text-decoration: none;
+    }
+    .active {
+        color: $color-blue-clicked;
+    }
+}
+
+.footer {
+    & {
+        background-color: $bg-color;
+        height: 3rem;
+        width: $default-width;
+        padding-top: 0;
+        position: relative;
+        bottom: 0;
+    }
+    &-par {
+        align-self: center;
+        padding-top: 10px;
+    }
+    &-link {
+        margin-left: 6rem;
+        align-self: center;
+    }
+    &-links {
+        padding-right: 20px;
+    }
+}
+
+.bgimg {
+    filter: brightness(30%);
+    height: 480px;
+    width: 100%;
+}
+
+.about {
+    position: relative;
+    margin-top: 8rem;
+    &-word {
+        color: $bg-color;
+        position: absolute;
+        top: -480px;
+        left: 15rem;
+        // font-family: $raleway;
+    }
+    &-header {
+        font-size: 40px;
+        font-family: $moserito;
+    }
+    &-header2 {
+        padding-top: 2.5rem;
+        font-family: $raleway;
+        font-size: 18px;
+    }
+    &-para {
+        font-family: $raleway;
+        font-size: 15px;
+        padding-top: 2.5rem;
+        width: 612px;
+        min-width: 612px;
+        max-width: 612px;
+    }
+}
+
+.projects {
+    position: relative;
+    &-word {
+        padding-top: 8rem;
+        color: $bg-color;
+        position: absolute;
+        top: -440px;
+        left: 13rem;
+        text-align: center;
+        // font-family: $raleway;
+    }
+    &-header {
+        font-size: 40px;
+        font-family: $moserito;
+    }
+    &-header2 {
+        padding-top: 2.5rem;
+        font-family: $raleway;
+        font-size: 18px;
+    }
+    &-para {
+        font-family: $raleway;
+        font-size: 15px;
+        padding-top: 2.5rem;
+        width: 822px;
+        min-width: 822px;
+        max-width: 912px;
+        // position: absolute;
+        // left: 9.2rem;
+    }
+}
+
+.our-projects {
+    & {
+        padding-top: 3rem;
+        height: 60rem;
+        width: $default-width;
+    }
+    &-name {
+        padding-top: 3rem;
+        font-size: 26px;
+        font-family: $raleway;
+        padding-left: 1.2rem;
+        color: $bg-color;
+        text-transform: uppercase;
+        width: 380px;
+        min-width: 380px;
+        max-width: 380px;
+    }
+    &-date {
+        padding-top: 3rem;
+        font-size: 18px;
+        font-family: $raleway;
+        padding-left: 80px;
+        color: $bg-color;
+        text-transform: uppercase;
+    }
+    &-img {
+        padding-top: 4rem;
+    }
+}
+
+.all {
+    background-image: linear-gradient(rgba(34, 33, 33, 0.4)), url(../img/img12l.jpg);
+    background-size: cover;
+}
+
+.contact-body {
+    &-1 {
+        background-color: $bg-color;
+        width: 70rem;
+        margin-top: 11rem;
+        height: 35rem;
+        margin-bottom: 4rem;
+    }
+    &-2 {
+        height: 652px;
+        width: 70rem;
+        margin-top: 11rem;
+        left: -1rem;
+        height: 35rem;
+        background-color: $bg-color;
+        &-img {
+            padding-left: 6rem;
+            padding-top: 2rem;
+            width: 60%;
+            height: 35%;
+        }
+        &-par {
+            color: $color-blue-regular;
+            font-family: $raleway;
+            text-align: right;
+            padding-right: 3rem;
+            padding-top: 2rem;
+        }
+    }
+    &-heading {
+        padding-top: 2rem;
+        text-align: center;
+    }
+    &-head {
+        font-weight: bold;
+        font-family: $moserito;
+        color: $color-blue-regular;
+        text-transform: uppercase;
+        font-family: $lato;
+    }
+    &-form-group:not(:last-child) {
+        padding-bottom: 3rem;
+    }
+    &-input {
+        border: none;
+        font-size: 1rem;
+        font-family: $raleway;
+        margin-left: 2rem;
+        margin-bottom: 4rem;
+        border-bottom: 1px solid $color-blue-regular;
+        width: 40%;
+        min-width: 40%;
+        max-width: 40%;
+        color: $color-blue-regular;
+        padding: 3px 15px 7px 12px;
+        &::-webkit-input-placeholder {
+            color: $color-blue-regular;
+        }
+        &:hover {
+            border: 1px solid $color-blue-regular;
+        }
+        &:focus {
+            outline: none;
+            border: 1px solid $color-blue-regular;
+        }
+    }
+    &-input-2 {
+        width: 86.5%;
+        min-width: 86.5%;
+        max-width: 86.5%;
+    }
+    &-input-3 {
+        width: 86.5%;
+        min-width: 86.5%;
+        max-width: 86.5%;
+        padding-bottom: 110px;
+    }
+    &-btn {
+        background-color: $color-blue-regular;
+        color: $bg-color;
+        border: none;
+        width: 86.5%;
+        min-width: 86.5%;
+        max-width: 86.5%;
+        height: 3.5rem;
+        font-family: $raleway;
+        font-size: 20px;
+        margin-left: 30px;
+        margin-top: -5rem;
+        transition: all 2s;
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.carousel {
+    padding-top: 7rem;
+}
+
+.glide {
+    width: 100%;
+    height: 500px;
+}
+
+.build {
+    background-color: $color-blue-regular;
+    color: $bg-color;
+    height: 28rem;
+    padding-top: 4rem;
+    text-align: center;
+    &-header-1 {
+        padding-top: 1rem;
+        font-size: 72px;
+        font-family: $montserrat;
+    }
+    &-header-2 {
+        font-size: 20px;
+        font-family: $raleway;
+        padding-top: 2rem;
+    }
+    &-body {
+        font-size: 15px;
+        font-family: $raleway;
+        padding-top: 2rem;
+        width: 820px;
+        max-width: 820px;
+    }
+}
+
+.work {
+    height: 14rem;
+    background-color: $bg-color;
+    color: $color-blue-regular;
+    text-align: center;
+    &-head-1 {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: $montserrat;
+        padding-top: 3rem;
+    }
+    &-head-2 {
+        font-size: 18px;
+        font-family: $raleway;
+        padding-top: 3rem;
+    }
+}
+
+.counter {
+    font-size: 20px;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: $default-width;
+    letter-spacing: 5px;
+    transition: all;
+    &-box {
+        background-color: $bg-color;
+        width: $default-width;
+        height: 4rem;
+        text-align: center;
+    }
+    &-par {
+        font-size: 30px;
+        font-family: $raleway;
+    }
+    // .spacing {
+    //
+    // }
+}
+
+.recent-work {
+    color: $bg-color;
+    &-row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    &-col {
+        float: left;
+        width: 50%;
+    }
+    &-content {
+        padding-top: 4rem;
+        padding-left: 8rem;
+    }
+    &-header-1 {
+        font-size: 22px;
+        font-family: $raleway;
+    }
+    &-header-2 {
+        padding-top: 3rem;
+        font-size: 18px;
+        font-family: $raleway;
+    }
+    &-par {
+        padding-top: 3rem;
+        font-size: 15px;
+        font-family: $raleway;
+        width: 40%px;
+        min-width: 460px;
+        max-width: 460px;
+    }
+}
+
+.landing-contact {
+    padding-top: 6rem;
+    padding-left: 7rem;
+    color: $bg-color;
+    &-reduceSpace {
+        height: 500px !important;
+    }
+    &-header {
+        font-size: 40px;
+        font-family: $montserrat;
+        font-weight: bold;
+    }
+    &-par {
+        font-family: $raleway;
+        padding-top: 3rem;
+    }
+}
+
+.contact-body2 {
+    height: 30rem;
+    &-1 {
+        background-color: $color-blue-regular;
+        height: 652px;
+        width: 70rem;
+        min-width: 70px;
+        max-width: 70px;
+        margin-top: 4.7rem;
+    }
+    &-2 {
+        height: 652px;
+        width: 70rem;
+        min-width: 70px;
+        max-width: 70px;
+        margin-top: 4.7rem;
+        left: -1rem;
+    }
+    &-head {
+        font-size: 40px;
+        font-family: $montserrat;
+        font-weight: bold;
+    }
+    &-par {
+        font-family: $raleway;
+        padding-top: 3rem;
+    }
+    &-heading {
+        padding-top: 7rem;
+        text-align: center;
+    }
+    &-head {
+        font-weight: bold;
+        font-family: $moserito;
+        color: $bg-color;
+        text-transform: uppercase;
+        font-family: $lato;
+    }
+    &-form-group:not(:last-child) {
+        padding-bottom: 3rem;
+    }
+    &-input {
+        border: none;
+        font-size: 1rem;
+        font-family: $raleway;
+        margin-left: 2rem;
+        margin-bottom: 1.7rem;
+        border-bottom: 1px solid $bg-color;
+        width: 40%;
+        min-width: 40%;
+        max-width: 40%;
+        background-color: $color-blue-regular;
+        color: $bg-color;
+        padding: 3px 15px 7px 12px;
+        &::-webkit-input-placeholder {
+            color: $bg-color;
+        }
+        &:hover {
+            border: 1px solid $bg-color;
+        }
+        &:focus {
+            outline: none;
+            border: 1px solid $bg-color;
+        }
+    }
+    &-input-2 {
+        width: 86.5%;
+        min-width: 86.5%;
+        max-width: 86.5%;
+    }
+    &-input-3 {
+        width: 86.5%;
+        min-width: 86.5%;
+        max-width: 86.5%;
+        padding-bottom: 90px;
+    }
+    &-btn {
+        background-color: $bg-color;
+        color: $color-blue-regular;
+        border: none;
+        width: 86.5%;
+        min-width: 86.5%;
+        max-width: 86.5%;
+        height: 3.5rem;
+        font-family: $raleway;
+        font-size: 20px;
+        margin-left: 30px;
+        margin-top: 3rem;
+        transition: all 2s;
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.mission {
+    margin-top: -8rem;
+    height: 23rem;
+    background-color: $bg-color;
+    // &-head {
+    // }
+    &-header {
+        padding-top: 2rem;
+        font-weight: 4rem;
+        justify-content: center;
+        text-transform: uppercase;
+        text-align: center;
+        align-self: center;
+        font-family: $montserrat;
+        color: $color-blue-regular;
+    }
+    &-par {
+        padding-top: 2rem;
+        width: 60rem;
+        min-width: 60rem;
+        max-width: 60rem;
+        text-align: center;
+        padding-left: 25rem;
+        font-family: $moserito;
+    }
+}
+
+.do {
+    height: 43rem;
+    background-color: $color-blue-regular;
+    color: $bg-color;
+    &-header {
+        text-align: center;
+        font-family: $moserito;
+        text-transform: uppercase;
+        padding-top: 2rem;
+        &-2 {
+            font-family: $lato;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+    &-body {
+        text-align: center;
+    }
+    &-img {
+        padding-top: 3rem;
+        width: 5rem;
+    }
+    &-par {
+        font-size: 15px;
+        font-family: $raleway;
+        text-transform: lowercase;
+        width: 17rem;
+        padding-left: 2.7rem;
+        text-align: center;
+    }
+}
+
+.nav2 {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .band {
+        width: 100%;
+        height: 2.99rem;
+        &-par {
+            font-size: 13px;
+        }
+    }
+    .nav {
+        & {
+            display: flex;
+            height: 70px;
+            width: 100%;
+            padding: 10px;
+        }
+        &-image {
+            margin-left: 0.5rem;
+        }
+        &-items {
+            display: flex;
+            margin-left: 4rem;
+        }
+        &-item {
+            padding-left: 20px;
+        }
+    }
+    .build {
+        height: 24rem;
+        padding-top: 6rem;
+        text-align: center;
+        &-header-1 {
+            justify-content: center;
+            padding-left: 7rem;
+            padding-top: 2rem;
+            font-size: 40px;
+            font-family: $montserrat;
+        }
+        &-header-2 {
+            padding-left: 7rem;
+            font-size: 20px;
+            font-family: $raleway;
+            padding-top: 0.6rem;
+        }
+        &-body {
+            font-size: 9px;
+            padding-top: 0.4rem;
+            padding-left: 4rem;
+            justify-content: center;
+            width: 22px;
+            min-width: 420px;
+            max-width: 450px;
+        }
+    }
+    .work {
+        height: 5.5rem;
+        // text-align: center;
+        width: 31rem;
+        &-head-1 {
+            font-size: 30px;
+            padding-top: 0.4rem;
+        }
+        &-head-2 {
+            font-size: 18px;
+            padding-top: 0.3rem;
+        }
+    }
+    .recent-work {
+        &-col {
+            width: 100%;
+        }
+        &-content {
+            padding-top: 1rem;
+            padding-left: 1rem;
+        }
+        &-img {
+            margin: 2px;
+            width: 30.4rem;
+        }
+        &-header-1 {
+            font-size: 16px;
+            font-family: $raleway;
+        }
+        &-header-2 {
+            padding-top: 1rem;
+            font-size: 12px;
+            font-family: $raleway;
+        }
+        &-par {
+            padding-top: 1rem;
+            font-size: 10px;
+            font-family: $raleway;
+            width: 50%;
+            min-width: 460px;
+            max-width: 460px;
+        }
+    }
+    .landing-contact {
+        padding-top: 6rem;
+        padding-left: 3rem;
+        color: $bg-color;
+        width: 24rem;
+        height: 58rem;
+        &-header {
+            font-size: 40px;
+            font-family: $montserrat;
+            font-weight: bold;
+        }
+        &-par {
+            font-family: $raleway;
+            padding-top: 1rem;
+        }
+    }
+    .contact-body2 {
+        height: 30rem;
+        &-form-group:not(:last-child) {
+            padding-bottom: 3rem;
+        }
+        &-input {
+            border: none;
+            font-size: 1rem;
+            font-family: $raleway;
+            margin-left: -1rem;
+            margin-bottom: 1.7rem;
+            margin-right: 2rem;
+            border-bottom: 1px solid $bg-color;
+            width: 27.1rem;
+            min-width: 27.1rem;
+            max-width: 40%;
+            background-color: $color-blue-regular;
+            color: $bg-color;
+            padding: 20px 20px 7px 20px;
+            &::-webkit-input-placeholder {
+                color: $bg-color;
+            }
+            &:hover {
+                border: 1px solid $bg-color;
+            }
+            &:focus {
+                outline: none;
+                border: 1px solid $bg-color;
+            }
+        }
+        &-input-2 {
+            width: 27.1rem;
+            min-width: 27.1rem;
+            max-width: 86.5%;
+        }
+        &-input-3 {
+            width: 27.1rem;
+            min-width: 27.1rem;
+            padding-bottom: 90px;
+        }
+        &-btn {
+            background-color: $bg-color;
+            color: $color-blue-regular;
+            border: none;
+            width: 27.1rem;
+            min-width: 27.1rem;
+            height: 3.5rem;
+            font-family: $raleway;
+            font-size: 20px;
+            margin-left: -18px;
+            margin-top: 1rem;
+            // margin-bottom: 12rem;
+            transition: all 2s;
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    .footer {
+        & {
+            background-color: $bg-color;
+            height: 3rem;
+            width: $default-width-small;
+            margin-top: 5rem;
+            position: relative;
+            bottom: 0;
+        }
+        &-par {
+            align-self: center;
+            display: none;
+        }
+        &-para {
+            padding-right: 1rem;
+        }
+        &-link {
+            padding-left: 12rem;
+            padding-top: 10px;
+            font-size: 1.5rem;
+        }
+        // &-links {
+        //     // padding-right: 20px;
+        // }
+    }
+    .bgimg {
+        filter: brightness(30%);
+        // height: 560px;
+        width: 265%;
+    }
+    .about {
+        position: relative;
+        margin-top: 8rem;
+        &-word {
+            color: $bg-color;
+            position: absolute;
+            top: -480px;
+            left: 15rem;
+            // font-family: $raleway;
+        }
+        &-header {
+            font-size: 40px;
+            font-family: $moserito;
+        }
+        &-header2 {
+            padding-top: 2.5rem;
+            font-family: $raleway;
+            font-size: 18px;
+        }
+        &-para {
+            font-family: $raleway;
+            font-size: 15px;
+            padding-top: 2.5rem;
+            width: 612px;
+            min-width: 612px;
+            max-width: 612px;
+        }
+    }
+}
+
+// .owl-prev {
+//     left: 10px;
+// }
+// .owl-next {
+//     right: 10px;
+// }
+// .owl-prev,
+// .owl-next {
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     margin-top: auto;
+//     margin-bottom: auto;
+// }
+// .owl-prev:hover,
+// .owl-prev:active,
+// .owl-prev:focus,
+// .owl-next:hover,
+// .owl-next:active,
+// .owl-next:focus {
+//     outline: 0;
+// }
+// .owl-next span,
+// .owl-prev span {
+//     font-size: 60px;
+//     box-shadow: 1px 1px 5px #999;
+//     color: #4dc7a0;
+// }
+// .owl-theme .owl-nav[class*="owl-"]:hover {
+//     background-color: transparent;
+//     box-shadow: none;
+// }
+.owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: 0.5rem;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: $color-blue-regular;
+}
+
+.owl-dots:hover,
+.owl-dots:active,
+.owl-dots:focus {
+    outline: none;
+}
