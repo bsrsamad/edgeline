@@ -345,8 +345,12 @@ body {
 }
 
 .counter {
+    color: $color-blue-regular;
     font-size: 20px;
+    font-weight: 20rem;
     padding-left: 7px;
+    font-family: $raleway;
+    padding-top: 12rem;
     padding-right: 7px;
     width: $default-width;
     letter-spacing: 5px;
@@ -354,16 +358,13 @@ body {
     &-box {
         background-color: $bg-color;
         width: $default-width;
-        height: 4rem;
+        height: 3rem;
         text-align: center;
     }
     &-par {
         font-size: 30px;
         font-family: $raleway;
     }
-    // .spacing {
-    //
-    // }
 }
 
 .recent-work {
@@ -457,14 +458,14 @@ body {
         font-family: $lato;
     }
     &-form-group:not(:last-child) {
-        padding-bottom: 3rem;
+        padding-bottom: 1rem;
     }
     &-input {
         border: none;
         font-size: 1rem;
         font-family: $raleway;
-        margin-left: 2rem;
-        margin-bottom: 1.7rem;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
         border-bottom: 1px solid $bg-color;
         width: 40%;
         min-width: 40%;
@@ -504,7 +505,7 @@ body {
         height: 3.5rem;
         font-family: $raleway;
         font-size: 20px;
-        margin-left: 30px;
+        margin-left: 20px;
         margin-top: 3rem;
         transition: all 2s;
         &:focus {
@@ -577,6 +578,22 @@ body {
 
 .nav2 {
     display: none;
+}
+
+.owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: 0.5rem;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: $color-blue-regular;
+}
+
+.owl-dots:hover,
+.owl-dots:active,
+.owl-dots:focus {
+    outline: none;
 }
 
 @media screen and (max-width: 576px) {
@@ -810,52 +827,7 @@ body {
             max-width: 612px;
         }
     }
-}
-
-// .owl-prev {
-//     left: 10px;
-// }
-// .owl-next {
-//     right: 10px;
-// }
-// .owl-prev,
-// .owl-next {
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     margin-top: auto;
-//     margin-bottom: auto;
-// }
-// .owl-prev:hover,
-// .owl-prev:active,
-// .owl-prev:focus,
-// .owl-next:hover,
-// .owl-next:active,
-// .owl-next:focus {
-//     outline: 0;
-// }
-// .owl-next span,
-// .owl-prev span {
-//     font-size: 60px;
-//     box-shadow: 1px 1px 5px #999;
-//     color: #4dc7a0;
-// }
-// .owl-theme .owl-nav[class*="owl-"]:hover {
-//     background-color: transparent;
-//     box-shadow: none;
-// }
-.owl-dots {
-    position: absolute;
-    left: 0;
-    bottom: 0.5rem;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    color: $color-blue-regular;
-}
-
-.owl-dots:hover,
-.owl-dots:active,
-.owl-dots:focus {
-    outline: none;
+    .carousel {
+        width: 100%;
+    }
 }

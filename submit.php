@@ -6,8 +6,8 @@
      $msg=$_POST['msg'];
 
      $to='bsrabdulsamad@gmail.com';
-     $subject='form submission';
-     $message="name: ".$name."\n"."subject: ".$sub."\n". "wrote the following: "."\n\n".$msg;
+     $subject="subject: ".$sub;
+     $message="name: ".$name."\n\n". "wrote the following: "."\n\n".$msg;
      $headers="from: ".$email;
 
      if(mail($to,$subject,$message,$headers)){
@@ -16,3 +16,4 @@
          echo"something went wrong";
      }
  }
+?>
